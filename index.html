@@ -19,12 +19,20 @@
       <nav>
         <div id="nav-container">
           <ul id="nav-links">
-            <iconify-icon
-              id="burgerIcon"
-              icon="charm:menu-hamburger"
-              width="48"
-              height="48"
-              style="color: white"></iconify-icon>
+            <div id="burgerIcon">
+              <iconify-icon
+                class="active"
+                id="drop"
+                icon="charm:menu-hamburger"
+                width="48"
+                height="48"
+                style="color: white"></iconify-icon>
+              <iconify-icon
+                id="remove"
+                icon="maki:cross"
+                width="48"
+                height="48"></iconify-icon>
+            </div>
             <div class="burger-content">
               <li><a href="#profile">Profile</a></li>
               <li><a href="#projects">Projects</a></li>
@@ -218,10 +226,22 @@
     <script>
       //Burger Logic
       const burgerIcon = document.querySelector("#burgerIcon");
+      const burgerDropIcon = burgerIcon.querySelector("#drop");
+      const burgerCancelIcon = burgerIcon.querySelector("#remove");
       const burgerContent = document.querySelector(".burger-content");
+      var isActive = false;
 
       burgerIcon.addEventListener("click", (e) => {
         burgerContent.classList.toggle("active");
+        isActive = burgerContent.classList.contains("active");
+
+        if (isActive) {
+          burgerCancelIcon.classList.add("active");
+          burgerDropIcon.classList.remove("active");
+        } else {
+          burgerCancelIcon.classList.remove("active");
+          burgerDropIcon.classList.add("active");
+        }
       });
 
       //Project Dropdown

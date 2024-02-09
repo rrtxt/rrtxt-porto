@@ -44,16 +44,16 @@ nav {
   display: none;
 }
 
-.burger-content li {
+.burger-content li a {
   cursor: pointer;
   font-size: 18px;
+  transition: 0.3s ease;
 }
 
-.burger-content li:hover {
-  cursor: default;
-  color: #ff872e;
-  transition: 0.5s;
+.burger-content li a:hover {
   cursor: pointer;
+  color: #ff872e;
+  transition: 0.5s ease;
 }
 
 li {
@@ -236,7 +236,6 @@ footer {
     display: none;
     margin-top: 20px;
     flex-direction: column;
-    /* align-items: center; */
   }
 
   .burger-content.active {
@@ -246,6 +245,22 @@ footer {
   #burgerIcon {
     display: flex;
     justify-content: center;
+  }
+
+  #drop {
+    display: none;
+  }
+
+  #drop.active {
+    display: block;
+  }
+
+  #remove {
+    display: none;
+  }
+
+  #remove.active {
+    display: block;
   }
 
   #profile {
