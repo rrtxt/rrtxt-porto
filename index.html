@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,600&family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="asset/style/env.css" />
+    <link rel="stylesheet" href="asset/style/style.css" />
+
+    <title>rrtxt | profile</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="nav-container">
+          <ul id="nav-links">
+            <iconify-icon
+              id="burgerIcon"
+              icon="charm:menu-hamburger"
+              width="48"
+              height="48"
+              style="color: white"></iconify-icon>
+            <div class="burger-content">
+              <li><a href="#profile">Profile</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="profile">
+        <aside>
+          <img
+            id="my-pict"
+            src="./asset/image/my-picture.jpg"
+            width="200"
+            height="300"
+            alt="rizfi" />
+        </aside>
+        <article>
+          <div id="profile-desc">
+            <h3>
+              Hi there, I'm
+              <span>RIZFI FERDIANSYAH</span>
+            </h3>
+            <p>
+              Motivated Information Systems student at
+              <span>Universitas Airlangga</span>
+              ,
+              <br />
+              currently in the 5th semester, with a keen interest in becoming a
+              skilled
+              <span>Backend Engineer</span>
+              .
+              <br />
+              Proficient in
+              <span>Laravel, Node.js</span>
+              , and exploring backend development with
+              <span>Golang</span>
+              .
+              <br />
+              Eager to expand my knowledge and contribute to innovative web
+              development projects.
+            </p>
+          </div>
+        </article>
+      </div>
+      <div id="projects">
+        <h2>Projects</h2>
+        <article>
+          <section class="card">
+            <h3 class="title">
+              <a
+                href="https://github.com/AgileRE-2023/Journal-Database-Reviewer"
+                target="_blank">
+                Journal Database Reviewer
+              </a>
+            </h3>
+            <p class="project-desc">
+              Reviewer Database Journal is a software that helps users find
+              suitable reviewers for journals to be published.
+              <br />
+              This software is developed using the Django framework and runs on
+              the Microsoft Windows operating system.
+            </p>
+            <figure class="project-fig">
+              <img src="./asset/image/JDR-Dashboard.png" alt="JDR-Dashboard" />
+            </figure>
+            <div class="dropIcon">
+              <iconify-icon
+                icon="gridicons:dropdown"
+                width="48"
+                height="48"
+                style="color: black"></iconify-icon>
+            </div>
+          </section>
+          <section class="card">
+            <h3 class="title">
+              <a href="https://github.com/rrtxt/MasBroAcademy" target="_blank">
+                MasBroAcademy
+              </a>
+            </h3>
+            <p class="project-desc">
+              MasbroAcademy is an educational platform designed and developed
+              with Laravel,
+              <br />
+              aimed at providing a seamless learning experience for both
+              students and educators.
+            </p>
+            <figure class="project-fig">
+              <img src="./asset/image/MBA_Landing.png" alt="MBA_Landing" />
+            </figure>
+            <div class="dropIcon">
+              <iconify-icon
+                icon="gridicons:dropdown"
+                width="48"
+                height="48"
+                style="color: black"></iconify-icon>
+            </div>
+          </section>
+          <section class="card">
+            <h3 class="title">
+              <a href="https://github.com/rrtxt/Cinematxt" target="_blank">
+                Cinematxt
+              </a>
+            </h3>
+            <p class="project-desc">
+              CinemaTxt is a movie ticket booking website built with Next.js,
+              allowing users to easily order tickets for currently playing
+              movies.
+              <br />
+              This repository contains the source code and project files for the
+              CinemaTxt website.
+            </p>
+            <figure class="project-fig">
+              <img
+                src="./asset/image/Cinematxt_Landing.png"
+                alt="Cinematxt_Landing" />
+            </figure>
+            <div class="dropIcon">
+              <iconify-icon
+                icon="gridicons:dropdown"
+                width="48"
+                height="48"
+                style="color: black"></iconify-icon>
+            </div>
+          </section>
+        </article>
+      </div>
+      <div id="contacts">
+        <article>
+          <section id="contact-form">
+            <h2>Contacts</h2>
+            <form action="">
+              <input
+                class="contact-input"
+                placeholder="Email"
+                type="email"
+                name="email"
+                id="email-input" />
+              <textarea
+                class="contact-input"
+                placeholder="Write your message here"
+                name="textarea"
+                id="text-input"
+                cols="30"
+                rows="10"></textarea>
+              <button id="submit-btn" class="contact-input">
+                Submit Your Message
+              </button>
+            </form>
+          </section>
+          <section id="#socmed">
+            <h2>Social Media</h2>
+            <ul id="socmed-list">
+              <li>
+                <a href="https://www.instagram.com/rizfi_f/">
+                  <iconify-icon
+                    icon="mdi:instagram"
+                    width="48"
+                    height="48"></iconify-icon>
+                  <span>Instagram</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/rizfi-ferdiansyah-24909a220/">
+                  <iconify-icon
+                    icon="mdi:linkedin"
+                    width="48"
+                    height="48"></iconify-icon>
+                  <span>Linkedin</span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/rrtxt">
+                  <iconify-icon
+                    icon="mdi:github"
+                    width="48"
+                    height="48"></iconify-icon>
+                  <span>Github</span>
+                </a>
+              </li>
+              <li></li>
+            </ul>
+          </section>
+        </article>
+      </div>
+    </main>
+    <footer id="contacts"></footer>
+    <script>
+      //Burger Logic
+      const burgerIcon = document.querySelector("#burgerIcon");
+      const burgerContent = document.querySelector(".burger-content");
+
+      burgerIcon.addEventListener("click", (e) => {
+        burgerContent.classList.toggle("active");
+      });
+
+      //Project Dropdown
+      const projects = document.querySelectorAll(".card");
+
+      projects.forEach((project) => {
+        const dropdownBtn = project.querySelector(".dropIcon iconify-icon");
+        const dropdownContent = project.querySelector(".project-fig");
+
+        dropdownBtn.addEventListener("click", (e) => {
+          dropdownContent.classList.toggle("active");
+          dropdownBtn.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

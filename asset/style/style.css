@@ -1,0 +1,268 @@
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #3b41e3;
+  padding: 25px 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+}
+
+#nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#icon {
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.burger-content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 70px;
+}
+
+#burgerIcon {
+  display: none;
+}
+
+.burger-content li {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.burger-content li:hover {
+  cursor: default;
+  color: #ff872e;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+main {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+  min-height: 100%;
+  max-width: 70%;
+}
+
+#profile-desc span {
+  color: #ff872e;
+  font-weight: 800;
+}
+
+#my-pict {
+  border: 1px white solid;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+  transform: rotatez(5deg);
+}
+
+#projects {
+  margin-top: 50px;
+  width: 60%;
+  height: 100%;
+}
+
+.card {
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.card figure img {
+  max-width: 70%;
+  max-height: 325px;
+}
+
+.title a {
+  color: black;
+}
+
+.project-desc {
+  color: black;
+}
+
+.project-fig {
+  display: none;
+  /* margin: 10px;
+  justify-content: center; */
+}
+
+.project-fig.active {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+}
+
+.dropIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropIcon iconify-icon {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dropIcon iconify-icon.active {
+  transform: rotateZ(180deg);
+  transition: 0.3s ease;
+}
+
+#contacts {
+  margin-top: 50px;
+  width: 60%;
+}
+
+#contacts article {
+  display: flex;
+  gap: 10px;
+}
+
+#contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-input {
+  min-width: 50%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+.contact-input::placeholder {
+  font-weight: 600;
+}
+
+#text-input {
+  height: 200px;
+}
+
+#submit-btn {
+  cursor: pointer;
+  background-color: #ff872e;
+  font-weight: 700;
+  border: none;
+  transition: 0.2s ease-in-out;
+}
+
+#submit-btn:hover {
+  background-color: #fff;
+  color: black;
+  transition: 0.2s ease-in-out;
+}
+
+#socmed-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  gap: 10px;
+}
+
+#socmed-list li a {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  gap: 10px;
+}
+
+footer {
+  height: 100%;
+}
+
+@media only screen and (min-width: 1025px) {
+  /* Add your styles for desktop/laptop screens here */
+  #contact-form {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Add your styles for tablets here */
+  #profile {
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  #contact-form {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Add your styles for mobile devices here */
+  .burger-content {
+    display: none;
+    margin-top: 20px;
+    flex-direction: column;
+    /* align-items: center; */
+  }
+
+  .burger-content.active {
+    display: flex;
+  }
+
+  #burgerIcon {
+    display: flex;
+    justify-content: center;
+  }
+
+  #profile {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #profile-desc {
+    text-align: center;
+  }
+
+  #contacts article {
+    flex-direction: column;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+}
